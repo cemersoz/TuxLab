@@ -1,0 +1,13 @@
+---
+- name: TuxLab MongoDB Server for AWS
+  hosts: aws
+  roles:
+  - common
+  - mongo
+
+
+- name: TuxLab MongoDB Server for Vagrant
+  hosts: vagrant
+  roles:
+  - common
+  - mongo

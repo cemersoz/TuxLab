@@ -12,40 +12,65 @@
 		<link type="text/css" rel="stylesheet" href="css/myStyle.css">
 	</head>
 	<body>
-		<!--Navigation bar-->
-		<nav class="grey">
-			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo amber-text text-lighten-2">Tuxlab</a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons amber-text text-lighten-2">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="sass.html">Courses</a></li>
-					<li><a href="badges.html">Account</a></li>
-				</ul>
-				<ul class="side-nav" id="mobile-demo">
-					<li><a href="sass.html">Courses</a></li>
-					<li><a href="badges.html">Account</a></li>
-				</ul>
-			</div>
-		</nav>
 		<!--Page Content-->
 		<main>
-			<!--Login Form-->
-			<h2 class="center grey-text">Login</h2>
-			<div class="row">
-				<form class="col s6">
-					<div class="row">
-						<div class="input-field col s6">
-							<input id="username" type="text" class="validate">
-							<label for="username">Username</label>
+			<!--Navigation bar-->
+			<nav class="grey">
+				<div class="nav-wrapper">
+					<a href="#!" class="brand-logo amber-text text-lighten-2">Tuxlab</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons amber-text text-lighten-2">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="sass.html">Courses</a></li>
+						<li><a href="badges.html">Account</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="sass.html">Courses</a></li>
+						<li><a href="badges.html">Account</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!--Login Card-->
+			<div id="login-page" class="row">
+				<div class="col s4 z-depth-4 card-panel">
+					<form class="login-form">
+						<div class="row">
+							<h2 class="grey-text text-darken-2 center">Login</h2>
 						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s6">
-							<input id="password" type="password" class="validate">
-							<label for="password">Password</label>
+						<div class="row margin">
+							<div class="input-field col s12">
+								<i class="mdi-social-person-outline prefix"></i>
+								<input id="username" type="text">
+								<label for="username" class="center-align">Username</label>
+							</div>
 						</div>
-					</div>
-				</form>
+						<div class="row margin">
+							<div class="input-field col s12">
+								<i class="mdi-action-lock-outline prefix"></i>
+								<input id="password" type="password">
+								<label for="password">Password</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 m12 l12  login-text">
+								<input type="checkbox" id="remember-me" />
+								<label for="remember-me">Remember me</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<a href="index.html" class="btn waves-effect waves-light col s12">Login</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6 m6 l6">
+								<p class="margin medium-small"><a href="page-register.html">Register Now!</a></p>
+							</div>
+							<div class="input-field col s6 m6 l6">
+								<p class="margin right-align medium-small"><a href="page-forgot-password.html">Forgot password ?</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</main>
 		<!--Footer-->

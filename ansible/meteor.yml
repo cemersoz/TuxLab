@@ -1,0 +1,19 @@
+---
+- name: TuxLab Meteor Server for AWS
+  hosts: aws
+  roles:
+  - common
+  - nginx
+  - mongo
+  - nodejs
+  - meteor
+
+
+- name: TuxLab Meteor Server for Vagrant
+  hosts: vagrant
+  roles:
+  - common
+  - nginx
+  - mongo
+  - nodejs
+  - meteor
